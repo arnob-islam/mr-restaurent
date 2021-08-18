@@ -1,0 +1,534 @@
+$-light-yellow: #f1dd44;
+$-gray: #828282;
+
+img.logo__ {
+  width: 2rem;
+}
+@mixin letterSpace {
+  letter-spacing: 0.033rem;
+}
+@mixin textuppercase {
+  text-transform: uppercase;
+}
+.__span {
+  text-transform: uppercase;
+}
+.global_btn {
+  background: #f1dd44 !important;
+  border-radius: 1px !important;
+  border: 1px solid $-light-yellow !important;
+  padding: 0.55rem 1.6rem !important;
+  &:hover {
+    background: none !important;
+    color: $-light-yellow !important;
+  }
+}
+.glob_h2 {
+  text-transform: uppercase;
+}
+.global_s {
+  font-weight: 600;
+}
+
+section:not(.hero_sector) {
+  padding: 110px 0;
+}
+
+.section-food-cover {
+  padding: 0;
+}
+
+.img_container {
+  img {
+    max-width: 100%;
+  }
+}
+
+//section title ********* section title *********** *********
+.section-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  .title-wrapper {
+    text-align: center;
+    @include textuppercase();
+    h3 {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    span {
+      color: $-light-yellow;
+      font-size: 1rem;
+    }
+  }
+}
+
+/*   
+ ***********************************************************************
+ ************************     GLOBAL CLASSES END     *******************
+ ***********************************************************************
+*/
+
+// hero owl carousel ************** *************** **************  start
+
+.hero_sector {
+  .carousel_wrapper {
+    position: relative;
+    .item {
+      height: 100vh;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      .item_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .__span {
+        color: #ddd;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        color: white;
+      }
+      .hero_btn {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      position: absolute;
+      bottom: 50%;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      button {
+        &:hover {
+          background: none !important;
+        }
+        span {
+          font-size: 3rem;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// hero  owl carousel ************** *************** ************** end
+
+//about us ************* about us ************
+
+.about_us_sector {
+  .row {
+    .section-style {
+      p {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem 0.5rem 2rem;
+        border-left: 2px solid $-light-yellow;
+        margin: 1.77rem 0;
+      }
+    }
+    h2 {
+      line-height: 2.8rem;
+      span {
+        font-weight: bold;
+      }
+    }
+    .description {
+      p {
+        margin: 1.5rem 0 2rem;
+        font-size: 1rem;
+        @include letterSpace();
+        color: #777;
+      }
+    }
+  }
+}
+
+//SECVICE SECTOR ******************** ***************** ************
+
+.service_section {
+  .singele_box_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .single_box {
+    width: 19rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @include letterSpace();
+    &:hover {
+      svg {
+        color: $-gray;
+      }
+      .single_title {
+        color: $-light-yellow;
+      }
+    }
+    svg {
+      color: $-light-yellow;
+      height: 40px;
+      width: 40px;
+    }
+  }
+  .single_title {
+    @include textuppercase();
+    font-weight: 500;
+    font-size: 0.88rem;
+  }
+  .description {
+    color: $-gray;
+    font-size: 0.9rem;
+  }
+}
+
+// Food cover ************* food cover **************
+
+.food_container {
+  display: flex;
+  justify-content: center;
+
+  padding: 0.5rem;
+  .food_cover_singel {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 28rem;
+    padding: 10rem 0;
+    // border: 3px solid white;
+    text-align: center;
+    h2 {
+      color: white;
+    }
+  }
+}
+
+//section menu  *********** menu ****************
+
+.our_menu {
+  .body-wrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .title_span {
+    font-weight: 600;
+  }
+  .menu_body {
+    display: flex;
+    width: 27rem;
+    gap: 2rem;
+    @include textuppercase();
+    .price_container {
+      margin: 1rem 0 0;
+    }
+    .menu_badge {
+      background: gold;
+      width: 3rem;
+      text-align: center;
+      border-radius: 0.2rem;
+      padding: 0.2rem;
+      display: inherit;
+      margin-top: 1rem;
+    }
+    .img_container {
+      img {
+        width: 8rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+
+// exclusive food *************** exclusive food *************
+
+.exclusive_food_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  .exclusive_food_body {
+    width: 22rem;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    .food_name {
+      span {
+        @include textuppercase();
+        font-weight: 500;
+        color: black;
+      }
+    }
+    p {
+      @include letterSpace();
+      color: $-gray;
+      padding: 0 1.3rem;
+    }
+    span {
+      color: $-light-yellow;
+    }
+  }
+}
+
+// team ************** team *****************
+
+.sector_team {
+  background: white;
+  .row {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .team_single_body {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.77rem;
+    gap: 0.77rem;
+    text-align: center;
+    color: #535353;
+    img {
+      border-radius: 50%;
+    }
+    span {
+      @include textuppercase();
+      font-weight: 500;
+    }
+    .links a {
+      padding: 0.66rem;
+      border-radius: 50%;
+      border: 1px solid #ebebeb;
+      font-size: 1rem;
+      color: #535353;
+      height: 40px;
+      width: 40px;
+      transition: 0.4s;
+    }
+  }
+}
+
+// testimonial ************ ************* *********
+
+.testimonial {
+  .body {
+    display: flex;
+    width: 22rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    img {
+      border-radius: 50%;
+      width: 8rem;
+    }
+    span.name {
+      @include textuppercase();
+      font-weight: 600;
+    }
+    .tesimonial_branding {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      .start_ {
+        i {
+          color: $-light-yellow;
+        }
+      }
+    }
+    .description {
+      p {
+        font-weight: 500;
+        @include letterSpace();
+        color: $-gray;
+      }
+    }
+  }
+}
+
+// Contect-form ********** form ************** form
+
+.contect_form {
+  .form_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      padding: 1.5rem 1rem 0.5rem;
+      border-bottom: 1px solid $-light-yellow;
+      background: none;
+      color: white;
+      outline: none;
+    }
+  }
+
+  .iframe_wrapper {
+    height: 100%;
+    iframe {
+      height: 100%;
+    }
+  }
+}
+
+// contect us *********** contect us ***************
+
+.section-contect {
+  .single_content_box {
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.66rem;
+    @include textuppercase();
+    i {
+      font-size: 1.8rem;
+      color: $-light-yellow;
+    }
+    span {
+      font-size: 0.9rem;
+    }
+    .contect {
+      color: $-gray;
+    }
+  }
+  .sent_mail {
+    cursor: pointer;
+  }
+}
+
+// Footer ********** Footer *******************************
+
+.site_footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid #ddd;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    .img_container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .page_links {
+      display: flex;
+      gap: 1rem;
+      a {
+        @include textuppercase();
+        color: $-light-yellow;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    span {
+      @include textuppercase();
+      font-weight: 500;
+    }
+    .img_container {
+      img {
+        width: 2rem;
+      }
+    }
+    .copy_write {
+      a {
+        color: $-light-yellow;
+      }
+    }
+  }
+  .row > * {
+    width: auto;
+  }
+}
+
+.page_about_us {
+  .row {
+    .heading {
+      height: 2px;
+      width: 3rem;
+      background: linear-gradient(to right, #ff6557 0, #ff367c 100%);
+      margin: auto;
+      transform: rotate(90deg);
+    }
+    h2 {
+      font-size: 3rem;
+      span {
+        background: linear-gradient(to right, #ff6557 0, #ff367c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+.about_page {
+  .MuiPaper-root {
+    background: none;
+  }
+}
+
+.about_service {
+  .daww8 {
+    justify-content: center;
+    gap: 3.5rem;
+    .contents {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      span {
+        background: linear-gradient(to right, #ff6557 0, #ff367c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .description {
+      p {
+        color: $-gray;
+        @include letterSpace();
+      }
+    }
+  }
+  .daww8 > * {
+    width: 33rem;
+  }
+}
+
+.about_cover {
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  h2 {
+    line-height: 3.4rem;
+  }
+  .description {
+    p {
+      font-size: 1rem;
+      color: #e7e7e7;
+      font-weight: 500;
+    }
+  }
+}
