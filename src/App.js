@@ -5,12 +5,14 @@ import Home from './pages/Home';
 import AboutUs from './subpage/AboutUs';
 import FixedScrool from './components/FixedScrool';
 import Error from './components/Error';
+import ColorChanger from './color';
+
 const App = () => {
   return (
     <Router>
       <FixedScrool />
       <NavBar />
-
+      <ColorChanger />
       <Switch>
         <Route exact path='/'>
           <Home />
